@@ -1,0 +1,587 @@
+.dropdown__effects__bg {
+    background-color: rgb(0, 0, 150);
+    border-bottom: 3px solid rgb(150, 0, 0 )
+
+}
+.dropdown__effects__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+   
+}
+
+.dd {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+}
+
+.dd-btn {
+    text-decoration: underline;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.dd-content > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.dd-content > a:hover {
+    background-color: white;
+    color: black;
+}
+
+.dd-content {
+    background-color: rgb(0, 0, 150);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    display: none;
+    transition: 0.16s;
+    box-shadow: 18px 18px 36px rgb(39, 35, 35);
+}
+
+.dd:hover > .dd-content {
+    display: block;
+}
+
+@media only screen and (max-width: 375px) {
+    .dropdown__effects__bg, .dropdown__effects__wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown__effects__bg, .dropdown__effects__wrapper {
+        display: none;
+    }
+}
+
+/* the showcase styles */
+
+.showcase__bg {
+    background-image: url("../Images/School_Building.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+}
+
+.showcase__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+}
+.showcase__info {
+    width: 500px;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.showcase__info > h1 {
+    font-size: 56px;
+    line-height: 3rem;
+}
+.showcase__info > p {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .showcase__bg {
+        height: 300px;
+    }
+    .showcase__wrapper {
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .showcase__info > h1 {
+        font-size: 24px;
+        line-height: 1.5rem;
+    }
+    .showcase__info > p {
+        font-size: 14px;
+        line-height: .9rem;
+    }
+    .showcase__info {
+        width: 300px;
+    }
+    }
+
+    @media only screen and (max-width: 768px) {
+       
+        
+        .showcase__wrapper {
+            flex-direction :column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+         }
+
+    }
+/* the marquee styles */
+
+marquee {
+    margin-top: 10px;
+    padding: 20px;
+    color: red;
+}
+
+/* the classroom section styles */
+.classroom__wrapper {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 250px 250px;
+    gap: 5px;
+    width: 805px;
+    margin: 0px auto;
+
+}
+
+.classroom__one__wrapper {
+    grid-row: span 2;
+}
+.classroom__one {
+    height: 505px;
+    width: 400px;
+}
+.classroom__two,
+.classroom__three {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .classroom__one {
+        height: 505px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .classroom__two,
+    .classroom__three {
+        height: 250px;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .classroom__wrapper {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 250px 250px;
+        gap: 5px;
+        width: 605px;
+        margin: 0px auto;
+    
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .classroom__one {
+        width: 165px;
+        height: 305px;
+        object-fit: cover;
+    }
+    .classroom__two,
+    .classroom__three {
+        width: 165px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .classroom__wrapper {
+        display: grid;
+        grid-template-columns: 165px 165px;
+        grid-template-rows: 150px 150px;
+        gap: 5px;
+        width: 100%;
+        margin: 0px auto;
+    
+    }
+    .classroom__info > p {
+        font-size: 16px;
+    }
+}
+
+
+
+.classroom__info {
+    width: 500px;
+    margin: 0px auto 20px auto;
+    text-align: center;
+}
+.classroom__info > h1 {
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 375px) {
+    .classroom__info {
+        width: 100%;
+    }
+    .classroom__info > h1 {
+        font-size: 24px;
+    }
+    .classroom__info > p {
+        font-size: 14px;
+    }
+    .section {
+        padding: 50px 0px;
+    }
+}
+
+/* this is the students library styles */
+
+.library__images__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.library__one,
+.library__two {
+    width: 600px;
+}
+
+.library__info > h1 {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .library__one,
+    .library__two {
+        width: 300px;
+    }
+
+    .library__images__wrapper {
+        width: 610px;
+        margin: 0px auto;
+    }
+    
+    .library__info > h1 {
+        text-indent: 25px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+      .library__images__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .library__one,
+      .library__two {
+       width: 100%;
+      }
+
+      .library__info > h1 {
+        text-indent: -2px; }
+}
+
+/* the computer lab styles */
+
+.computer__lab__one {
+    height: 505px;
+    width: 400px;
+    object-fit: cover;
+}
+.computer__lab__two {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.computer__lab__images__wrapper {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 250px 250px;
+    gap: 5px;
+    width: 805px;
+    margin: 0px auto;
+}
+
+.computer__lab__one__wrapper {
+    grid-row: span 2;
+}
+
+.computer__lab__info > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .computer__lab__one {
+        width: 300px;
+        height: 405px;
+        object-fit: cover;
+    }
+
+    .computer__lab__two {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .computer__lab__images__wrapper {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 200px;
+        gap: 5px;
+        width: 605px;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .computer__lab__one {
+        width: 165px;
+        height: 305px;
+        object-fit: cover;
+    }
+
+    .computer__lab__two {
+        width: 165px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .computer__lab__images__wrapper {
+        display: grid;
+        grid-template-columns: 165px 165px;
+        grid-template-rows: 150px 150px;
+        gap: 5px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .computer__lab__info > h1 {
+        text-align: left;
+        line-height: 2rem;
+    }
+}
+
+/* the students activities styles */
+
+.activities__on__campus__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.students__images__wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.students__one {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.students__two {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.activities__info { 
+    width: 500px;
+}
+.more__activities__link {
+    color: rgb(0, 140, 255);
+    font-size: 18px;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .activities__on__campus__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .students__one,
+    .students__two {
+        width: 165px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .activities__info > h1 {
+        font-size: 24px;
+    }
+    .activities__info > p {
+        font-size: 16px;
+    }
+    
+    .activities__info {
+        width: 100%;
+    }
+}
+
+/* this is the administrator styles */
+
+.teacher__one__image,
+.teacher__two__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.register__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.dean__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.principal__image,
+.vice__principal__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.administrators__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 2fr));
+    gap: 2rem;
+}
+.principal__wrapper,
+.vice__principal__wrapper,
+.dean__of__student__wrapper,
+.register__wrapper,
+.teacher__wrapper {
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.principal__wrapper:hover {
+    box-shadow: 18px 18px 36px #cacaca;
+    cursor: pointer;
+}
+.vice__principal__wrapper:hover {
+    box-shadow: 18px 18px 36px #cacaca;
+    cursor: pointer;
+}
+.dean__of__student__wrapper:hover {
+    box-shadow: 18px 18px 36px #cacaca;
+    cursor: pointer;
+}
+.register__wrapper:hover {
+    box-shadow: 18px 18px 36px #cacaca;
+    cursor: pointer;
+}
+.teacher__wrapper:hover {
+    box-shadow: 18px 18px 36px #cacaca;
+    cursor: pointer;
+}
+
+.admin__info {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 376px) {
+    .admin__info > h1 {
+        font-size: 24px;
+    }
+}
+
+/* this is the newsletter styles */
+
+.newsletter__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 150);
+    padding: 20px;
+    height: 20vh;
+    border-radius: 10px;
+    color: white;
+}
+#subscribe {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-image: url("../Images/email__background__image.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 30px;
+}
+#subscribe-btn {
+    background-color:rgb(150, 0, 0 );
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: 0.15s;
+}
+#subscribe-btn:hover {
+    opacity: 0.8;
+}
+#subscribe-btn:active {
+    opacity: 0.5;
+}
+@media only screen and (max-width: 768px) {
+    .newsletter__info__wrapper > h1 {
+        line-height: 2rem;
+    }
+    #subscribe-btn {
+        width: 300px;
+        margin: 5px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .newsletter__wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 30vh;
+    }
+
+    .newsletter__info__wrapper > h1 {
+        font-size: 18px;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+    }
+
+    #subcribe {
+        width: 100%;
+    }
+    #subscribe-btn {
+        width: 100%;
+        font-size: 18px;
+    }
+}
