@@ -51,7 +51,7 @@
 }
 
 .dd:hover > .dd-content {
-    height: 250px;
+    height: 230px;
 }
 
 @media only screen and (max-width: 375px) {
